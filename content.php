@@ -23,9 +23,9 @@
 <?php
 
 if(isset($_GET["ext"]) && isset($_GET["file"])){
-    include("./files/".$_GET["file"].$_GET["ext"]);
+    include("./".$_GET["file"].$_GET["ext"]);
 }elseif(isset($_GET["file"])){
-    include("./files/".$_GET["file"].".php");
+    include("./".$_GET["file"].".php");
 }else{
  include("index.php");   
 }
